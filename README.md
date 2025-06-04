@@ -29,3 +29,7 @@ Haz clic en la imagen para ver una demostración YML en asciinema:
 Haz clic en la imagen para ver una demostración YAML anidada en asciinema:
 
 [![Ver demo en asciinema](https://asciinema.org/a/WFKaBIhTXVA0l8heEAtayrPRL.svg)](https://asciinema.org/a/WFKaBIhTXVA0l8heEAtayrPRL)
+
+Haz clic en la imagen para ver una demostración del formatter plain en asciinema:
+
+[![Ver demo en asciinema](https://asciinema.org/a/HP1omMonyax02sFr0LnmjR92s.svg)](https://asciinema.org/a/HP1omMonyax02sFr0LnmjR92s)
