@@ -24,3 +24,16 @@ test('gendiff flat JSON', () => {
   // Compara ignorando espacios y saltos de línea para evitar fallos por formato
   expect(result.replace(/\s/g, '')).toBe(expected.trim().replace(/\s/g, ''));
 });
+
+test('gendiff flat YAML', () => {
+  const file1 = getFixturePath('file1.yml');
+  const file2 = getFixturePath('file2.yml');
+  const expected = readFile('expected.txt');
+
+  const result = genDiff(file1, file2);
+
+  console.log('Result YAML:', JSON.stringify(result));
+  console.log('Expected YAML:', JSON.stringify(expected.trim()));
+
+  expect(result.replace(/\s/g, '')).toBe(expected.trim().replace(/\s/g, ''));
+});
