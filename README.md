@@ -33,3 +33,7 @@ Haz clic en la imagen para ver una demostración YAML anidada en asciinema:
 Haz clic en la imagen para ver una demostración del formatter plain en asciinema:
 
 [![Ver demo en asciinema](https://asciinema.org/a/HP1omMonyax02sFr0LnmjR92s.svg)](https://asciinema.org/a/HP1omMonyax02sFr0LnmjR92s)
+
+Haz clic en la imagen para ver una demostración del formatter json en asciinema:
+
+[![Ver demo en asciinema](https://asciinema.org/a/LkuGdPglMMZSRPC6sG7gB5Fau.svg)](https://asciinema.org/a/LkuGdPglMMZSRPC6sG7gB5Fau)

@@ -102,3 +102,13 @@ test('gendiff nested JSON (plain formatter)', () => {
     expected.replace(/\s+/g, ' ').trim(),
   );
 });
+
+test('gendiff nested JSON (json formatter)', () => {
+  const file1 = getFixturePath('file1.json');
+  const file2 = getFixturePath('file2.json');
+  const expected = JSON.parse(readFile('expected-json.json'));
+
+  const result = JSON.parse(genDiff(file1, file2, 'json'));
+
+  expect(result).toEqual(expected);
+});
