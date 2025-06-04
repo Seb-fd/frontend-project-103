@@ -3,20 +3,28 @@ const getDiff = (obj1, obj2) => {
     new Set([...Object.keys(obj1), ...Object.keys(obj2)])
   ).sort();
 
-  const diffLines = keys.map((key) => {
-    if (!Object.hasOwn(obj2, key)) {
-      return `- ${key}: ${obj1[key]}`;
+  const diffLines = keys.flatMap((key) => {
+    const hasKey1 = Object.hasOwn(obj1, key);
+    const hasKey2 = Object.hasOwn(obj2, key);
+    const val1 = obj1[key];
+    const val2 = obj2[key];
+
+    if (hasKey1 && !hasKey2) {
+      return `  - ${key}: ${val1}`;
     }
-    if (!Object.hasOwn(obj1, key)) {
-      return `+ ${key}: ${obj2[key]}`;
+
+    if (!hasKey1 && hasKey2) {
+      return `  + ${key}: ${val2}`;
     }
-    if (obj1[key] !== obj2[key]) {
-      return `- ${key}: ${obj1[key]}\n+ ${key}: ${obj2[key]}`;
+
+    if (val1 !== val2) {
+      return [`  - ${key}: ${val1}`, `  + ${key}: ${val2}`];
     }
-    return `  ${key}: ${obj1[key]}`;
+
+    return `    ${key}: ${val1}`;
   });
 
-  return `{\n${diffLines.map((line) => `  ${line}`).join("\n")}\n}`;
+  return `{\n${diffLines.join("\n")}\n}`;
 };
 
 export default getDiff;
