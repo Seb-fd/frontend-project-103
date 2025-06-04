@@ -25,3 +25,7 @@ Haz clic en la imagen para ver una demostración JSON en asciinema:
 Haz clic en la imagen para ver una demostración YML en asciinema:
 
 [![Ver demo en asciinema](https://asciinema.org/a/KTQn0gsn7RbkxpeRJqD9EZi68.svg)](https://asciinema.org/a/KTQn0gsn7RbkxpeRJqD9EZi68)
+
+Haz clic en la imagen para ver una demostración YAML anidada en asciinema:
+
+[![Ver demo en asciinema](https://asciinema.org/a/WFKaBIhTXVA0l8heEAtayrPRL.svg)](https://asciinema.org/a/WFKaBIhTXVA0l8heEAtayrPRL)
