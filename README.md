@@ -18,6 +18,10 @@ npm install
 
 ## Demo de uso en terminal
 
-Haz clic en la imagen para ver una demostración en asciinema:
+Haz clic en la imagen para ver una demostración JSON en asciinema:
 
 [![Ver demo en asciinema](https://asciinema.org/a/QFI4siDUhCwWYaUhr8jeQ4vXc.svg)](https://asciinema.org/a/QFI4siDUhCwWYaUhr8jeQ4vXc)
+
+Haz clic en la imagen para ver una demostración YML en asciinema:
+
+[![Ver demo en asciinema](https://asciinema.org/a/KTQn0gsn7RbkxpeRJqD9EZi68.svg)](https://asciinema.org/a/KTQn0gsn7RbkxpeRJqD9EZi68)
