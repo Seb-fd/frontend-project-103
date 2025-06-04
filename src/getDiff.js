@@ -1,6 +1,6 @@
 const getDiff = (obj1, obj2) => {
   const keys = Array.from(
-    new Set([...Object.keys(obj1), ...Object.keys(obj2)])
+    new Set([...Object.keys(obj1), ...Object.keys(obj2)]),
   ).sort();
 
   const diffLines = keys.flatMap((key) => {
@@ -24,7 +24,7 @@ const getDiff = (obj1, obj2) => {
     return `    ${key}: ${val1}`;
   });
 
-  return `{\n${diffLines.join("\n")}\n}`;
+  return `{\n${diffLines.join('\n')}\n}`;
 };
 
 export default getDiff;

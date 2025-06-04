@@ -1,20 +1,20 @@
-import path from "path";
-import fs from "fs";
-import yaml from "js-yaml";
-import getDiff from "./getDiff.js";
+import path from 'path';
+import fs from 'fs';
+import yaml from 'js-yaml';
+import getDiff from './getDiff.js';
 
 const getFullPath = (filepath) => path.resolve(process.cwd(), filepath);
 
 const parseFile = (filepath) => {
   const fullPath = getFullPath(filepath);
-  const content = fs.readFileSync(fullPath, "utf-8");
+  const content = fs.readFileSync(fullPath, 'utf-8');
   const ext = path.extname(fullPath);
 
-  if (ext === ".json") {
+  if (ext === '.json') {
     return JSON.parse(content);
   }
 
-  if (ext === ".yaml" || ext === ".yml") {
+  if (ext === '.yaml' || ext === '.yml') {
     return yaml.load(content);
   }
 

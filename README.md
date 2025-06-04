@@ -1,6 +1,8 @@
-### Hexlet tests and linter status:
+### Hexlet tests, CodeClimate Maintainability and linter status:
 
 [![Actions Status](https://github.com/Seb-fd/frontend-project-103/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Seb-fd/frontend-project-103/actions)
+
+[![Maintainability](https://qlty.sh/badges/2a721303-14c5-4164-a494-34aa9b803258/maintainability.svg)](https://qlty.sh/gh/Seb-fd/projects/frontend-project-103)
 
 ## Descripción
 
